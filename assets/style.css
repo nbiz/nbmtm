@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.affiliate-logo {
+    max-width: 100px;
+    max-height: 69px;
+}
+
+.carousel-item {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+}
+
+.testimonial-content {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: 100%;
+    width: auto;
+    opacity: 0.05;
+    display: flex;
+    align-items: center;
+    padding: 5 15px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 35px;
+    width: 35px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#lead-form {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#lead-form .btn-primary {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
+
+
