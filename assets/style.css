@@ -18,6 +18,26 @@ header {
     max-height: 69px;
 }
 
+/* form */
+input[type="date"] {
+    width: 100%;  /* This will make the date input field take the full width */
+    padding: 2px 2px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+#notes {
+    width: 100%;
+    min-height: 100px; /* this will set a minimum height for the notes textarea */
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* allows the user to resize the textarea vertically */
+}
+
 .carousel-item {
     background-color: #f8f9fa;
     border: 1px solid #ddd;
@@ -90,6 +110,4 @@ footer {
         margin-bottom: 20px;
     }
 }
-
-
 

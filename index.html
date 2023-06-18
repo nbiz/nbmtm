@@ -55,6 +55,55 @@
                             <input type="text" class="form-control" name="destinationAddressFull"
                                 id="destinationAddressFull">
                         </div>
+                        <!-- also need unit number, property type, stairs, walking distance, elevator -->
+                        <div class="form-group">
+                            <label for="moveSize">Move Size:</label>
+                            <select class="form-control" id="moveSize" name="moveSize">
+                                <option value="Room or Less">Room or Less</option>
+                                <option value="Studio Apartment">Studio Apartment</option>
+                                <option value="1 Bedroom Apartment">1 Bedroom Apartment</option>
+                                <option value="2 Bedroom Apartment">2 Bedroom Apartment</option>
+                                <option value="3 Bedroom Apartment">3 Bedroom Apartment</option>
+                                <option value="1 Bedroom House">1 Bedroom House</option>
+                                <option value="1 Bedroom House (Large)">1 Bedroom House (Large)</option>
+                                <option value="2 Bedroom House">2 Bedroom House</option>
+                                <option value="2 Bedroom House (Large)">2 Bedroom House (Large)</option>
+                                <option value="3 Bedroom House" selected>3 Bedroom House</option>
+                                <option value="3 Bedroom House (Large)">3 Bedroom House (Large)</option>
+                                <option value="4 Bedroom House">4 Bedroom House</option>
+                                <option value="4 Bedroom House (Large)">4 Bedroom House (Large)</option>
+                                <option value="5 Bedroom House">5 Bedroom House</option>
+                                <option value="5 Bedroom House (Large)">5 Bedroom House (Large)</option>
+                                <option value="5 x 10 Storage Unit">5 x 10 Storage Unit</option>
+                                <option value="10 x 10 Storage Unit">10 x 10 Storage Unit</option>
+                                <option value="10 x 15 Storage Unit">10 x 15 Storage Unit</option>
+                                <option value="10 x 20 Storage Unit">10 x 20 Storage Unit</option>
+                                <option value="Other (Leave a detailed note)">Other (Leave a detailed note)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceType">Service Type:</label>
+                            <select class="form-control" id="serviceType" name="serviceType">
+                                <option value="Moving" selected>Moving</option>
+                                <option value="Packing">Packing</option>
+                                <option value="Moving and Packing">Moving and Packing</option>
+                                <option value="Unload Only">Unload Only</option>
+                                <option value="Commercial">Commercial</option>
+                                <option value="Storage in Bound">Storage in Bound</option>
+                                <option value="Storage Out Bound">Storage Out Bound</option>
+                                <option value="Inner House">Inner House</option>
+                                <option value="Junk Removal">Junk Removal</option>
+                                <option value="Labour Only">Labour Only</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="moveDate">Move Date:</label>
+                            <input type="date" id="moveDate" name="moveDate"><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Notes:</label>
+                            <textarea id="notes" name="notes"></textarea><br>
+                        </div>
                         <div class="form-group">
                             <button class="btn btn-primary">Submit Lead</button>
                         </div>
