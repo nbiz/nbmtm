@@ -35,35 +35,144 @@
                         <form id="lead-form"
                             action="https://api.smartmoving.com/api/leads/from-provider/v2?providerKey=f379ab14-601f-4852-9a49-afd601456102"
                             method="POST">
-                            <div class="form-group">
-                                <label>First Name:</label>
-                                <input required type="text" class="form-control" name="firstName" id="firstName">
+                            <div class="form-group row">
+                                <div class="col">
+                                    <label><b>First Name:</b></label>
+                                    <input required type="text" class="form-control" name="firstName" id="firstName">
+                                </div>
+                                <div class="col">
+                                    <label><b>Last Name:</b></label>
+                                    <input required type="text" class="form-control" name="lastName" id="lastName">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label>Last Name:</label>
-                                <input required type="text" class="form-control" name="lastName" id="lastName">
-                            </div>
-                            <div class="form-group">
-                                <label>Phone Number:</label>
+                                <label><b>Phone Number:</b></label>
                                 <input type="text" class="form-control" name="phoneNumber" id="phoneNumber">
                             </div>
                             <div class="form-group">
-                                <label>Email:</label>
+                                <label><b>Email:</b></label>
                                 <input required type="text" class="form-control" name="email" id="email">
                             </div>
-                            <div class="form-group">
-                                <label>Origin:</label>
-                                <input type="text" class="form-control" name="originAddressFull" id="originAddressFull">
+                            <!-- Origin Address and Unit Number -->
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="form-group">
+                                        <label><b>Origin:</b></label>
+                                        <input required type="text" class="form-control" name="originAddressFull"
+                                            id="originAddressFull">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>Unit #:</label>
+                                        <input type="text" class="form-control" name="originUnitNumber"
+                                            id="originUnitNumber">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Destination:</label>
-                                <input type="text" class="form-control" name="destinationAddressFull"
-                                    id="destinationAddressFull">
+
+                            <!-- Origin details -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Stairs:</label>
+                                        <select class="form-control" id="originStairs" name="originStairs">
+                                            <option>No Stairs</option>
+                                            <option>One Flight</option>
+                                            <option>Two Flights</option>
+                                            <option>Three Flights</option>
+                                            <option>Four Flights</option>
+                                            <option>Five Flights</option>
+                                            <option>Six Flights</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Elevator:</label>
+                                        <select class="form-control" id="originElevator" name="originElevator">
+                                            <option>No</option>
+                                            <option>Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Walk:</label>
+                                        <select class="form-control" id="originWalkDistance" name="originWalkDistance">
+                                            <option>Less than 100 feet</option>
+                                            <option>100 to 199 feet</option>
+                                            <option>200 to 299 feet</option>
+                                            <option>300 to 399 feet</option>
+                                            <option>400 to 500 feet</option>
+                                            <option>More than 500 feet</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- also need unit number, property type, stairs, walking distance, elevator -->
-                            <!-- also need number of bed bags -->
+
+                            <!-- Destination Address and Unit Number -->
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="form-group">
+                                        <label><b>Destination:</b></label>
+                                        <input required type="text" class="form-control" name="destinationAddressFull"
+                                            id="destinationAddressFull">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>Unit #:</label>
+                                        <input type="text" class="form-control" name="destinationUnitNumber"
+                                            id="destinationUnitNumber">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Destination details -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Stairs:</label>
+                                        <select class="form-control" id="destinationStairs" name="destinationStairs">
+                                            <option>No Stairs</option>
+                                            <option>One Flight</option>
+                                            <option>Two Flights</option>
+                                            <option>Three Flights</option>
+                                            <option>Four Flights</option>
+                                            <option>Five Flights</option>
+                                            <option>Six Flights</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Elevator:</label>
+                                        <select class="form-control" id="destinationElevator"
+                                            name="destinationElevator">
+                                            <option>No</option>
+                                            <option>Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Walk:</label>
+                                        <select class="form-control" id="destinationWalkDistance"
+                                            name="destinationWalkDistance">
+                                            <option>Less than 100 feet</option>
+                                            <option>100 to 199 feet</option>
+                                            <option>200 to 299 feet</option>
+                                            <option>300 to 399 feet</option>
+                                            <option>400 to 500 feet</option>
+                                            <option>More than 500 feet</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="form-group">
-                                <label for="moveSize">Move Size:</label>
+                                <label for="moveSize"><b>Move Size:</b></label>
                                 <select class="form-control" id="moveSize" name="moveSize">
                                     <option value="Room or Less">Room or Less</option>
                                     <option value="Studio Apartment">Studio Apartment</option>
@@ -87,8 +196,9 @@
                                     <option value="Other (Leave a detailed note)">Other (Leave a detailed note)</option>
                                 </select>
                             </div>
+                            <!-- also need number of bed bags -->
                             <div class="form-group">
-                                <label for="serviceType">Service Type:</label>
+                                <label for="serviceType"><b>Service Type:</b></label>
                                 <select class="form-control" id="serviceType" name="serviceType">
                                     <option value="Moving" selected>Moving</option>
                                     <option value="Packing">Packing</option>
@@ -103,11 +213,11 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="moveDate">Move Date:</label>
+                                <label for="moveDate"><b>Move Date:</b></label>
                                 <input type="date" id="moveDate" name="moveDate"><br>
                             </div>
                             <div class="form-group">
-                                <label for="notes">Notes:</label>
+                                <label for="notes"><b>Notes:</b></label>
                                 <textarea id="notes" name="notes"></textarea><br>
                             </div>
                             <div class="form-group">
@@ -116,7 +226,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 framed-content">
                     <h2>Services Offered</h2>
                     <ul>
                         <li>Local, Long Distance and International Moving</li>

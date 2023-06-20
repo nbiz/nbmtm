@@ -41,6 +41,15 @@ input[type="date"] {
     /* allows the user to resize the textarea vertically */
 }
 
+/* white background/box for right panel text */
+/* .framed-content {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+} */
+
+
 .carousel-item {
     background-color: #f8f9fa;
     border: 1px solid #ddd;
