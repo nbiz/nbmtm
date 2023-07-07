@@ -69,6 +69,36 @@ document.addEventListener('mouseup', function (e) {
     }
 });
 
+let touchMove = false;
+
+document.addEventListener('touchstart', function (e) {
+    isMouseDown = true;
+    touchMove = false;
+    intervalId = setInterval(() => {
+        if (isMouseDown && !touchMove) {
+            for (let i = 0; i < 5; i++) {
+                createEmoji(e.touches[0].clientX, e.touches[0].clientY);
+            }
+        }
+    }, 50);
+});
+
+document.addEventListener('touchend', function (e) {
+    isMouseDown = false;
+    touchMove = false;
+    if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+    }
+});
+
+document.addEventListener('touchmove', function (e) {
+    touchMove = true;
+    mouseX = e.touches[0].clientX;
+    mouseY = e.touches[0].clientY;
+});
+
+
 // Get all dropdowns
 const dropdowns = document.querySelectorAll('select');
 
